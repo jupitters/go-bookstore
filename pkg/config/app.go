@@ -13,4 +13,9 @@ func Connect() {
 	if err != nil {
 		panic(err)
 	}
+	db = d
+}
+
+func GetDB() *gorm.DB {
+	return db
 }
